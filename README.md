@@ -1,6 +1,6 @@
 # SQA Portfolio – E2E UI & API Test Automation
 
-![Playwright Tests](https://github.com/<your-github-username>/sqa-portfolio-saucedemo/actions/workflows/playwright.yml/badge.svg)
+![Playwright Tests](https://github.com/jhonnyagung/sqa-portfolio-saucedemo/actions/workflows/playwright.yml/badge.svg)
 
 Automated test suite for the [SauceDemo](https://www.saucedemo.com) e-commerce demo app and the [JSONPlaceholder](https://jsonplaceholder.typicode.com) REST API, built with **Playwright + TypeScript**.
 
