@@ -37,7 +37,7 @@ body:
     attributes:
       label: Environment
       description: Browser + version, OS, screen size or device
-      placeholder: "Chrome 129, Windows 11, 1920×1080"
+      placeholder: "Opera 152.0.7977.120, Windows 11, 1920×1080"
     validations:
       required: true
 
