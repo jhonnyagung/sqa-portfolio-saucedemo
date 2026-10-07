@@ -29,6 +29,17 @@ Automated test suite for the [SauceDemo](https://www.saucedemo.com) e-commerce d
 
 Full list with steps and expected results: [`docs/test-cases.md`](docs/test-cases.md)
 
+## Manual testing – bugs found
+
+Exploratory testing on `problem_user` uncovered these defects, reported with a standard bug form:
+
+| ID | Bug | Severity |
+|---|---|---|
+| [#1](../../issues/1) | All product images show the same picture | Medium |
+| [#2](../../issues/2) | Product sorting has no effect | Medium |
+| [#3](../../issues/3) | "Add to cart" does nothing for 3 of 6 products | High |
+| [#4](../../issues/4) | Typing in "Last Name" fills "First Name", blocking checkout | Critical |
+
 ## Run locally
 
 ```bash
