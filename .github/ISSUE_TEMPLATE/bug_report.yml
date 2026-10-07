@@ -1,0 +1,103 @@
+name: 🐞 Bug Report
+description: Report a defect found during testing
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill in every field so the bug can be reproduced.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How badly does this affect the user?
+      options:
+        - Critical – blocks login or purchase for all users
+        - High – major feature broken, no workaround
+        - Medium – feature broken, workaround exists
+        - Low – cosmetic / UI text issue
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 – fix immediately
+        - P2 – fix in this release
+        - P3 – fix when possible
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser + version, OS, screen size or device
+      placeholder: "Chrome 129, Windows 11, 1920×1080"
+    validations:
+      required: true
+
+  - type: input
+    id: account
+    attributes:
+      label: Test account
+      placeholder: "problem_user"
+
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Preconditions
+      placeholder: "User is on https://www.saucedemo.com and logged out"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: One action per step, including the exact data used.
+      placeholder: |
+        1. Log in with username `problem_user` and password `secret_sauce`
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Drag & drop screenshots or a screen recording here.
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: Reproducible
+      options:
+        - Always
+        - Sometimes
+        - Once
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything else, e.g. "Does not occur with standard_user".
